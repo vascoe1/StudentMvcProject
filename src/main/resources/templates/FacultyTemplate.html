@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:text="${faculty.name}">A course</title>
+</head>
+<body>
+
+<header>
+    <h1 th:text="${faculty.name}">A Course</h1>
+</header>
+
+<main>
+    <ol>
+        <li><a href="/faculty">Courses</a></li>
+        <li th:text="${faculty.name}"></li>
+    </ol>
+    <h2 th:text="${faculty.description}"></h2>
+</main>
+
+<footer>
+    <small>VascodeV Coding Master 2021</small>
+</footer>
+
+</body>
+</html>

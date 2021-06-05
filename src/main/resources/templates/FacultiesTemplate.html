@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>A List of All Available Faculties</title>
+</head>
+<body>
+
+<header>
+    <h1>A List of All Faculties</h1>
+</header>
+
+<main>
+    <ul>
+        <li th:each="faculty: ${faculty}"><a th:href="@{/faculty(id=${faculty.id})}" th:text="${faculty.name}"></a></li>
+    </ul>
+</main>
+
+<footer>
+    <small>VascodeV Coding Master 2021</small>
+</footer>
+
+</body>
+</html>
